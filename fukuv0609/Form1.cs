@@ -25,12 +25,37 @@ namespace fukuv0609
         private void label1_Click(object sender, EventArgs e)
         {
             MessageBox.Show("葛西達也");
+            timer1.Enabled = false;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
             textBox1.Left += int.Parse(textBox1.Text);
             textBox2.Top += int.Parse(textBox2.Text);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            label1.Top = label1.Top - 10;
+            label1.Text=("依");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            label1.Top = label1.Top + 10;
+            label1.Text = ("神");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            label1.Left = label1.Left - 10;
+            label1.Text = ("紫");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            label1.Left = label1.Left + 10;
+            label1.Text = ("苑");
         }
     }
 }
